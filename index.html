@@ -1,118 +1,151 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
-  <style>
-    *{
-      padding: 0px;
-      margin: 0px;
-    }
-    @font-face {
-      font-family: "Inflate PTX";
-      src: url("baby-plums-font/BabyPlums-rv2gL.ttf") ;
-    }
-    h1{
-      font-family: Inflate PTX;
-    }
-    #myid{
-      background-color: red;
-    }
-    .cl{
-      color: blue;
-    }
-    h2{
-      color: red;
-      font-weight: 900;
-    }
-    input[type=email]{
-      border-radius: 10px;
-      background-color: aqua;
-    }
-    section>h1{
-      color: aqua;
-    }
-    section h1{
-      color: rebeccapurple;
-    }
-    h1+p{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      @font-face {
+        font-family: "Inflate PTX";
+        src: url("baby-plums-font/BabyPlums-rv2gL.ttf");
+      }
+      h1 {
+        font-family: Inflate PTX;
+      }
+      #myid {
+        background-color: red;
+      }
+      .cl {
+        color: blue;
+      }
+      h2 {
+        color: red;
+        font-weight: 900;
+      }
+      input[type="email"] {
+        border-radius: 10px;
+        background-color: aqua;
+      }
+      section > h1 {
+        color: aqua;
+      }
+      section h1 {
+        color: rebeccapurple;
+      }
+      h1 + p {
         font-size: 35px;
         color: red;
         text-shadow: 0 0 6px black;
-    }
-    button:hover{
-      color: blue;
-      font-size: 40px;
-      box-shadow: 3px 3px 5px red;
-    }
-    button:active{
-      box-shadow: 0px 0px 0px;
-      background-color: green;
-    }
-    input[type=checkbox]{
-      height: 50px;
-      width: 50px;
-    }
-    input:checked{
-      accent-color: red;
-      box-shadow: 5px 5px 8px;
-    }
-    button:focus{
-      outline: 3px solid grey;
-    }
-    a:link{
-      color: red;
-    }
-    a:visited{
-      color: green;
-    }
-    input{
-      font-size: 30px;
-      border-radius: 5px;
-      border-width: 2px 2px 2px 2px;
-    }
-    input:required{
+      }
+      button:hover {
+        color: blue;
+        font-size: 40px;
+        box-shadow: 3px 3px 5px red;
+      }
+      button:active {
+        box-shadow: 0px 0px 0px;
+        background-color: green;
+      }
+      input[type="checkbox"] {
+        height: 50px;
+        width: 50px;
+      }
+      input:checked {
+        accent-color: red;
+        box-shadow: 5px 5px 8px;
+      }
+      button:focus {
+        outline: 3px solid grey;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      input {
+        font-size: 30px;
+        border-radius: 5px;
+        border-width: 2px 2px 2px 2px;
+      }
+      div:has(h1){
+        background-color: aquamarine;
+        color: black;
+      }
+      div:not(:has(h1)){
+        background-color: gray;
+        color: black;
+      }
+      /* input:required{
       border-color:red
     }
-  </style>
-</head>
-<body>
-  <h1>Hello World</h1>
-  <h2>Selectors
-  </h2>
-  <ul>
-    <li>Universal</li>
-    <li id="myid">Id</li>
-    <li class="cl">class</li>
-    <li class="cl">class</li>
-    <li>Elements</li>
-    <li>Attribute</li>
-    <li>Pseudo Class</li>
-    <li>Pseudo Elements</li>
-    <input type="email" placeholder="email">
-    
-  </ul>
-  <section>
-    <h1>heading</h1>
-    <p>hello Duniyaaaaa</p>
-    <div>Hehehehehe Div 1</div>
-  </section>
-  <button>click me !!!!</button>\<br>
-  <input type="checkbox">
-  <br>
-  <a href="#">Linkkkk</a>
-  <br>
-  <a href="#6">Linkkkk</a>
-  <br>
-  <a href="#5678">Linkkkk</a>
-  <br>
-  <a href="#567gfdc8">Linkkkk</a><br>
-  <form action="">
-  <input type="text" placeholder="First Name"><br><br>
-  <input type="text" placeholder="middle Name"><br><br>
-  <input type="text" placeholder="last Name" required><br><br>
-  <input type="submit" value="submit">
-  </form>
-</body>
+    input:read-only{
+      border-color:cornflowerblue
+    }
+    input:read-write{
+      border-color:green
+    }
+    input:disabled{
+      border-color:red
+    }
+    input:optional{
+      border-color:blue
+    } */
+      input:out-of-range {
+        border-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h2>Selectors</h2>
+    <ul>
+      <li>Universal</li>
+      <li id="myid">Id</li>
+      <li class="cl">class</li>
+      <li class="cl">class</li>
+      <li>Elements</li>
+      <li>Attribute</li>
+      <li>Pseudo Class</li>
+      <li>Pseudo Elements</li>
+      <input type="email" placeholder="email" />
+    </ul>
+    <section>
+      <h1>heading</h1>
+      <p>hello Duniyaaaaa</p>
+      <div>Hehehehehe Div 1</div>
+    </section>
+    <button>click me !!!!</button>\<br />
+    <input type="checkbox" />
+    <br />
+    <a href="#">Linkkkk</a>
+    <br />
+    <a href="#6">Linkkkk</a>
+    <br />
+    <a href="#5678">Linkkkk</a>
+    <br />
+    <a href="#567gfdc8">Linkkkk</a><br />
+    <form action="">
+      <input type="text" placeholder="First Name" /><br /><br />
+      <input type="text" placeholder="middle Name" /><br /><br />
+      <input type="text" placeholder="last Name" required /><br /><br />
+      <input
+        type="number"
+        name="Hehehehehe"
+        id=""
+        min="1"
+        max="10"
+        value="12"
+      />
+      <input type="submit" value="submit" />
+    </form>
+
+    <div><h1>hello</h1></div>
+    <div><h2>hello000000000000 2</h2></div>
+  </body>
 </html>
