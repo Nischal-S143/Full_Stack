@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowTask</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        body{
+            font-family: Inter, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+    <div class="w-[1200px] max-w-full mx-auto p-6">
+
+        <!-- heading -->
+
+        <h1 class="text-4xl font-bold text-[#0F172A]">
+            Task 1 – SaaS Landing Page
+        </h1>
+
+        <p class="text-gray-600 mt-1 text-sm">
+            Build a responsive SaaS landing page using Tailwind CSS, with Flexbox for navigation
+            <br>
+            and Grid for the feature section.
+        </p>
+
+
+        <!-- main preview -->
+
+        <div class="flex gap-4 mt-6">
+
+            <!-- desktop -->
+
+            <div class="w-[680px] bg-white border rounded-xl overflow-hidden">
+
+                <!-- navbar -->
+
+                <div class="h-[60px] flex items-center justify-between px-6 border-b">
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="bg-blue-600 text-white w-7 h-7 rounded-md flex items-center justify-center text-xs">
+                            F
+                        </div>
+
+                        <b class="text-sm">
+                            FlowTask
+                        </b>
+
+                    </div>
+
+
+                    <div class="flex gap-8 text-[10px] text-gray-500">
+                        <span>Features</span>
+                        <span>Pricing</span>
+                        <span>Docs</span>
+                    </div>
+
+
+                    <div class="flex items-center gap-4">
+
+                        <span class="text-[10px]">
+                            Login
+                        </span>
+
+                        <button class="bg-[#4C46E5] text-white px-4 py-2 rounded-md text-[10px]">
+                            Get Started
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- hero -->
+
+                <div class="flex items-center justify-between px-7 py-10">
+
+                    <div class="w-[330px]">
+
+                        <span class="bg-indigo-50 text-indigo-600 text-[8px] px-2 py-1 rounded-full">
+                            Work Smarter
+                        </span>
+
+                        <h2 class="text-[27px] font-bold leading-tight mt-4">
+                            Build Better Products
+                            <br>
+                            Faster With Our Platform
+                        </h2>
+
+                        <p class="text-gray-500 text-[10px] leading-4 mt-3">
+                            Streamline your workflow, collaborate with your team
+                            and ship faster with our all-in-one platform.
+                        </p>
+
+
+                        <div class="flex gap-2 mt-5">
+
+                            <button class="bg-[#4C46E5] text-white text-[9px] px-5 py-2.5 rounded-md">
+                                Get Started
+                            </button>
+
+                            <button class="border border-indigo-300 text-indigo-600 text-[9px] px-5 py-2.5 rounded-md">
+                                View Demo
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- simple dashboard -->
+
+                    <div class="w-[280px] h-[190px] bg-[#F8FAFF] rounded-xl p-3">
+
+                        <div class="bg-white border rounded-lg h-full p-3">
+
+                            <div class="flex justify-between">
+
+                                <div class="flex gap-2">
+                                    <div class="w-5 h-5 bg-blue-100 rounded"></div>
+
+                                    <div>
+                                        <div class="w-16 h-2 bg-gray-200 rounded"></div>
+                                        <div class="w-10 h-1 bg-gray-100 rounded mt-1"></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-5 h-5 bg-blue-100 rounded-full"></div>
+
+                            </div>
+
+
+                            <div class="flex gap-2 mt-5">
+
+                                <div class="w-[150px] h-[110px] bg-gray-50 rounded-lg p-2">
+
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <div class="w-12 h-1 bg-gray-300"></div>
+                                            <div class="w-16 h-2 bg-gray-200 mt-2"></div>
+                                        </div>
+
+                                        <div class="w-7 h-4 bg-blue-500 rounded"></div>
+                                    </div>
+
+
+                                    <div class="flex items-end gap-2 h-[65px] mt-2">
+
+                                        <div class="w-3 h-5 bg-blue-200 rounded"></div>
+                                        <div class="w-3 h-9 bg-blue-300 rounded"></div>
+                                        <div class="w-3 h-7 bg-blue-400 rounded"></div>
+                                        <div class="w-3 h-12 bg-blue-500 rounded"></div>
+                                        <div class="w-3 h-9 bg-blue-400 rounded"></div>
+                                        <div class="w-3 h-14 bg-blue-600 rounded"></div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="space-y-2">
+
+                                    <div class="w-[70px] h-[50px] bg-indigo-50 rounded-lg"></div>
+
+                                    <div class="w-[70px] h-[50px] bg-gray-50 rounded-lg"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- features -->
+
+                <div class="border-t px-5 py-6">
+
+                    <div class="text-center">
+
+                        <h2 class="font-bold text-[17px]">
+                            Powerful Features
+                        </h2>
+
+                        <p class="text-[9px] text-gray-500">
+                            Everything you need to build, manage and grow your product.
+                        </p>
+
+                    </div>
+
+
+                    <div class="grid grid-cols-3 gap-3 mt-5">
+
+                        <div class="border rounded-lg p-4">
+
+                            <div class="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center">
+                                ⚡
+                            </div>
+
+                            <h3 class="font-bold text-[10px] mt-3">
+                                Fast & Reliable
+                            </h3>
+
+                            <p class="text-[8px] text-gray-500 mt-1">
+                                Experience blazing fast performance
+                                with 99.9% uptime.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border rounded-lg p-4">
+
+                            <div class="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center">
+                                👥
+                            </div>
+
+                            <h3 class="font-bold text-[10px] mt-3">
+                                Team Collaboration
+                            </h3>
+
+                            <p class="text-[8px] text-gray-500 mt-1">
+                                Work together seamlessly with
+                                real-time updates.
+                            </p>
+
+                        </div>
+
+
+                        <div class="border rounded-lg p-4">
+
+                            <div class="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center">
+                                🛡
+                            </div>
+
+                            <h3 class="font-bold text-[10px] mt-3">
+                                Secure by Design
+                            </h3>
+
+                            <p class="text-[8px] text-gray-500 mt-1">
+                                Your data is always protected with
+                                enterprise-grade security.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- tablet -->
+
+            <div class="w-[205px] bg-white border rounded-xl overflow-hidden">
+
+                <div class="flex justify-between items-center px-3 h-[55px] border-b">
+
+                    <div class="flex gap-1 items-center">
+
+                        <div class="w-5 h-5 bg-blue-100 rounded"></div>
+
+                        <b class="text-[9px]">
+                            FlowTask
+                        </b>
+
+                    </div>
+
+                    <span>☰</span>
+
+                </div>
+
+
+                <div class="p-3">
+
+                    <span class="text-[7px] bg-indigo-50 text-indigo-600 px-2 py-1 rounded-full">
+                        Work Smarter
+                    </span>
+
+                    <h2 class="font-bold text-[17px] leading-tight mt-4">
+                        Build Better Products
+                        <br>
+                        Faster With Our Platform
+                    </h2>
+
+                    <p class="text-[7px] text-gray-500 mt-3 leading-3">
+                        Streamline your workflow, collaborate
+                        with your team and ship faster with
+                        our all-in-one platform.
+                    </p>
+
+
+                    <button class="bg-blue-600 text-white w-full text-[8px] py-2 rounded mt-4">
+                        Get Started
+                    </button>
+
+                    <button class="border border-blue-300 text-blue-600 w-full text-[8px] py-2 rounded mt-2">
+                        View Demo
+                    </button>
+
+
+                    <h3 class="font-bold text-[12px] mt-7">
+                        Powerful Features
+                    </h3>
+
+                    <p class="text-[7px] text-gray-500">
+                        Everything you need to build, manage and grow your product.
+                    </p>
+
+
+                    <div class="border rounded-lg p-3 mt-4">
+
+                        <div class="w-7 h-7 bg-indigo-50 rounded flex items-center justify-center">
+                            ⚡
+                        </div>
+
+                        <b class="text-[8px]">
+                            Fast & Reliable
+                        </b>
+
+                        <p class="text-[6px] text-gray-500 mt-1">
+                            Experience blazing fast performance
+                            with 99.9% uptime.
+                        </p>
+
+                    </div>
+
+
+                    <div class="border rounded-lg p-3 mt-3">
+
+                        <div class="w-7 h-7 bg-indigo-50 rounded flex items-center justify-center">
+                            👥
+                        </div>
+
+                        <b class="text-[8px]">
+                            Team Collaboration
+                        </b>
+
+                        <p class="text-[6px] text-gray-500 mt-1">
+                            Work together seamlessly with
+                            real-time updates.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- mobile -->
+
+            <div class="w-[125px] bg-white border rounded-xl overflow-hidden">
+
+                <div class="h-[55px] border-b flex justify-between items-center px-2">
+
+                    <div class="flex items-center gap-1">
+
+                        <div class="w-5 h-5 bg-blue-100 rounded"></div>
+
+                        <b class="text-[8px]">
+                            FlowTask
+                        </b>
+
+                    </div>
+
+                    <span class="text-xs">
+                        ☰
+                    </span>
+
+                </div>
+
+
+                <div class="p-3">
+
+                    <span class="text-[6px] bg-indigo-50 text-blue-600 px-1 py-1 rounded">
+                        Work Smarter
+                    </span>
+
+                    <h2 class="text-[12px] font-bold leading-tight mt-3">
+                        Build Better Products
+                        <br>
+                        Faster With Our Platform
+                    </h2>
+
+                    <p class="text-[6px] text-gray-500 mt-2 leading-3">
+                        Streamline your workflow,
+                        collaborate with your team
+                        and ship faster.
+                    </p>
+
+
+                    <button class="bg-blue-600 text-white w-full text-[6px] py-2 rounded mt-3">
+                        Get Started
+                    </button>
+
+                    <button class="border border-blue-300 text-blue-600 w-full text-[6px] py-2 rounded mt-2">
+                        View Demo
+                    </button>
+
+
+                    <h3 class="font-bold text-[9px] mt-6">
+                        Powerful Features
+                    </h3>
+
+                    <p class="text-[5px] text-gray-500">
+                        Everything you need to build,
+                        manage and grow your product.
+                    </p>
+
+
+                    <div class="border rounded-lg p-2 mt-3">
+
+                        <div class="w-6 h-6 bg-indigo-50 rounded flex items-center justify-center text-[9px]">
+                            ⚡
+                        </div>
+
+                        <b class="text-[7px]">
+                            Fast & Reliable
+                        </b>
+
+                        <p class="text-[5px] text-gray-500 mt-1">
+                            Experience blazing fast
+                            performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- labels -->
+
+        <div class="flex mt-2 text-[10px] text-gray-600">
+
+            <div class="w-[680px] px-2">
+                Desktop (≥1024px)
+            </div>
+
+            <div class="w-[205px] px-2">
+                Tablet (640–1023px)
+            </div>
+
+            <div class="px-2">
+                Mobile (&lt;640px)
+            </div>
+
+        </div>
+
+
+        <!-- bottom information -->
+
+        <div class="bg-white rounded-xl mt-5 p-5 flex gap-10">
+
+            <!-- colors -->
+
+            <div class="w-[430px]">
+
+                <h3 class="font-bold text-xs">
+                    Colour Palette
+                </h3>
+
+                <div class="flex gap-3 mt-4">
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-[#4C46E5]"></div>
+                        <p class="text-[6px] mt-1">#4C46E5</p>
+                    </div>
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-[#4338CA]"></div>
+                        <p class="text-[6px] mt-1">#4338CA</p>
+                    </div>
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-[#0F172A]"></div>
+                        <p class="text-[6px] mt-1">#0F172A</p>
+                    </div>
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-[#475569]"></div>
+                        <p class="text-[6px] mt-1">#475569</p>
+                    </div>
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-[#F8FAFC] border"></div>
+                        <p class="text-[6px] mt-1">#F8FAFC</p>
+                    </div>
+
+                    <div>
+                        <div class="w-7 h-7 rounded-full bg-white border"></div>
+                        <p class="text-[6px] mt-1">#FFFFFF</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- typography -->
+
+            <div class="border-l pl-7 w-[300px]">
+
+                <h3 class="font-bold text-xs">
+                    Typography (Inter)
+                </h3>
+
+                <p class="text-[8px] mt-3">
+                    H1: 48px / 700 (36px mobile)
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    Section heading: 32px / 700
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    Card heading: 20px / 600
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    Body: 16px / 400
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    Nav: 14px / 500
+                </p>
+
+            </div>
+
+
+            <!-- layout -->
+
+            <div class="border-l pl-7">
+
+                <h3 class="font-bold text-xs">
+                    Key Layouts
+                </h3>
+
+                <p class="text-[8px] mt-3">
+                    • Navbar: Flex
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    • Hero: Flex (centered)
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    • Features: Grid (3→2→1)
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    • Max width: 1200px
+                </p>
+
+                <p class="text-[8px] mt-1">
+                    • Padding: 24px, gap: 24px
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
