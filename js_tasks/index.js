@@ -337,3 +337,5 @@ console.log(Number.parseInt(a)+Number.parseInt(a)+Number.parseInt(a));
 // console.log(arr);
 
 
+const greet = (a ="world") => console.log(`hello ${a}`);
+greet("gla");
