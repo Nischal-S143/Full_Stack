@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns of 100px */
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: brown; /* Mitti (Dirt) ka color */
+    border-radius: 50%; /* Gol (Circle) banaya */
+    cursor: pointer;
+}
+
+/* Jab mole bahar aayega, toh hole ka color black ho jayega */
+.mole {
+    background-color: black; 
+}

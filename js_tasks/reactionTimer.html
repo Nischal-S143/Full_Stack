@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { margin: 0;
+         display: flex;
+          height: 100vh;
+           font-family: sans-serif;
+         }
+    #box { flex: 1
+    ; display: flex;
+     align-items: center;
+      justify-content: center;
+       font-size: 24px; cursor:
+        pointer;
+         background: lightgray; }
+</style>
+</head>
+<body>
+    <div id="box" onclick="play()">Click to Start</div>
+
+<script>
+    let box = document.getElementById("box");
+    let start = 0;
+    let timer = null;
+    let isWaiting = false;
+
+    function play() {
+        if (box.innerText.includes("Start")) {
+            box.innerText = "Wait for green...";
+            box.style.background = "white";
+            isWaiting = true;
+            
+            let delay = Math.floor(Math.random() * 3000) + 2000;
+            
+            timer = setTimeout(() => {
+                isWaiting = false;
+                box.style.background = "green";
+                box.innerText = "CLICK!";
+                start = Date.now();
+            }, delay);
+            
+        } else if (isWaiting) {
+            clearTimeout(timer);
+            box.style.background = "red";
+            box.innerText = "Too early! Click to Start";
+            isWaiting = false;
+            
+        } else if (box.style.background === "green") {
+            let time = Date.now() - start;
+            let msg = time < 300 ? "Perfect Timing" : "To Late";
+            
+            box.style.background = "lightgray";
+            box.innerText = time + " ms - " + msg + ". Click to Start";
+        }
+    }
+</script>
+</body>
+</html>

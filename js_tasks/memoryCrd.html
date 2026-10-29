@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #board { display: grid; grid-template-columns: repeat(4, 60px); gap: 5px; margin-top: 20px; }
+    .card { width: 60px; height: 60px; background: gray; font-size: 0px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+    .show { background: white; font-size: 30px; }
+</style>
+</head>
+<body>
+    <h2>Score: <span id="score">0</span></h2>
+    <div id="board"></div>
+
+<script>
+    let items = ['🍎','🍎','🍌','🍌','🍇','🍇','🍉','🍉','🍓','🍓','🍒','🍒','🍍','🍍','🥝','🥝'];
+    items.sort(() => Math.random() - 0.5);
+    
+    let board = document.getElementById('board');
+    let score = 0;
+    let openCards = [];
+
+    items.forEach(val => {
+        let div = document.createElement('div');
+        div.className = 'card';
+        div.innerText = val;
+        
+        div.onclick = () => {
+            if (openCards.length < 2 && div.className === 'card') {
+                div.className = 'card show';
+                openCards.push(div);
+                
+                if (openCards.length === 2) {
+                    if (openCards[0].innerText === openCards[1].innerText) {
+                        score++;
+                        document.getElementById('score').innerText = score;
+                        openCards = [];
+                    } else {
+                        setTimeout(() => {
+                            openCards[0].className = 'card';
+                            openCards[1].className = 'card';
+                            openCards = [];
+                        }, 500);
+                    }
+                }
+            }
+        };
+        board.appendChild(div);
+    });
+</script>
+</body>
+</html>

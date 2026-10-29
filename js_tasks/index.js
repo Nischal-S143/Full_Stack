@@ -323,18 +323,17 @@ console.log(Number.parseInt(a)+Number.parseInt(a)+Number.parseInt(a));
 // console.log(`Binary: ${convertToBinary(number)}`);      // Outputs: 11111110
 // console.log(`Hexadecimal: ${convertToHexadecimal(number)}`); // Outputs: FE
 
-let arr = [1,2,3,4,5];
-console.log(arr);
-arr.push(6);
-console.log(arr);
-arr.unshift(0);
-console.log(arr);
-arr.pop();
-console.log(arr);
-arr.shift();
-console.log(arr);
-arr.foo = "Nischal"
-console.log(arr);
-
+// let arr = [1,2,3,4,5];
+// console.log(arr);
+// arr.push(6);
+// console.log(arr);
+// arr.unshift(0);
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+// arr.foo = "Nischal"
+// console.log(arr);
 
 
