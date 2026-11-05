@@ -337,5 +337,131 @@ console.log(Number.parseInt(a)+Number.parseInt(a)+Number.parseInt(a));
 // console.log(arr);
 
 
-const greet = (a ="world") => console.log(`hello ${a}`);
-greet("gla");
+// const greet = (a ="world") => console.log(`hello ${a}`);
+// greet("gla");
+
+// arr=[1,2,3,4,5];
+// brr=arr;
+// brr.push(6);
+// console.log(brr);
+
+// let o={name:"ABCD" , age:"123"}
+// let obj=o;
+// obj.name="BCDE";
+// console.log(o);
+
+// const sum1=(...arr5) => { return arr5.reduce((sum,n)=>sum+n,0)}
+// console.log(sum1(1,2,3));
+
+// function add(a,b){return a+b};
+// function add(a=0,b=0){return a+b};
+// add();
+// add(1);
+// add(1,2);
+
+
+
+
+// closers 
+// function Outer(){
+//     let a = 9;
+//     function inner(){
+//         console.log(a);
+//     }
+//     inner();
+// }
+// Outer();
+
+
+
+// function Outer(){
+//     let a = 9;
+//     function inner(){
+//         a++;
+//         console.log(a);
+//     }
+//     return {inner};
+// }
+// const cnt = Outer();
+// cnt.inner();
+// cnt.inner();
+// cnt.inner();
+
+// curring
+// function a(x){
+//     return function b(y){
+//         return function c(z){
+//             return x+y+z;
+//         }
+//     }
+// }
+// console.log(a(1)(2)(3));
+
+
+// function memoize(fn){
+//     const cache={};
+//     return function(x,y){
+//         const key=`${x},${y}`;
+//         if(cache[key]){
+//             console.log('from cache');
+//             return cache[key];
+//         }
+//         const result=fn(x,y);
+//         cache[key]=result;
+//         return result;
+//     }
+// }
+// const add=memoize(function(x,y){
+//     return x+y;
+// });
+// console.log(add(1,2));
+// console.log(add(1,2));
+
+
+
+// Factorial using memoization
+
+// function fact(n){
+//     if(n == 0 || n == 1){
+//         return n;
+//     }
+//     return n * fact(n-1);
+// }
+
+// console.log(fact(5));
+
+
+// Factorial using memoization
+// let cache = {};
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     }
+//     let key = `${n}`;
+//     if (cache[key]) {
+//         console.log("From cache");
+//         return cache[key];
+//     }
+//     cache[key] = n * factorial(n - 1);
+//     return cache[key];
+// }
+// console.log(factorial(5));
+// console.log(factorial(5)); 
+
+
+// Fibonacci using cache
+
+// let fibCache = {};
+// function fibonacci(n) {
+//     if (n === 0 || n === 1) {
+//         return n;
+//     }
+//     if (fibCache[n] !== undefined) {
+//         console.log("From cache");
+//         return fibCache[n];
+//     }
+//     fibCache[n] = fibonacci(n - 1) + fibonacci(n - 2);
+//     return fibCache[n];
+// }
+// console.log(fibonacci(6)); // 8
+// console.log(fibonacci(6)); // 8 (From cache)
